@@ -40,8 +40,9 @@ Follow these instructions to get a copy of the project up and running on your lo
    npm run dev
 
 5. Open your web browser and go to http://localhost:3000 to access the application.
+   
 
-##Usage:
+##  Usage:
 
 1. Add Book Record: Click on the "Add Book" link in the navigation menu to add a new book record. Fill in the required details and click "Add the Book."
 
@@ -55,15 +56,15 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 6. Delete Author Record: Click on the "Delete" button next to an author record in the "Authors Collection" to delete it.
 
-##Contributing:
+## Contributing:
 
 • If you'd like to contribute to this project, please follow the Contributing Guidelines.
 
-###License:
+### License:
 
 • This project is licensed under the MIT License.
 
-###Acknowledgments:
+### Acknowledgments:
 
 • https://reactjs.org/
 
@@ -76,11 +77,9 @@ Follow these instructions to get a copy of the project up and running on your lo
 • https://getbootstrap.com/
 
 
-##Contact:
+## Contact:
 
 If you have any questions or feedback, feel free to contact at [arafath2092@gmail.com].
-
-##Github:
 
 Replace `<https://github.com/Arafath100/REACT-TASK/tree/f84d98ab5b1fffb31673d2911d862d42e63ec893/ADMIN-DASHBOARD>`, `[arafath2092@gmail.com]`, and other placeholders with relevant information.
 
