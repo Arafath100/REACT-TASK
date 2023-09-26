@@ -22,7 +22,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone
+   git clone https://github.com/Arafath100/REACT-TASK/tree/d22dd98d6e4bf6f98b12e3f5a614752e11aabb45/ADMIN-DASHBOARD
 
 2. Navigate to the project directory:
 
@@ -81,7 +81,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 If you have any questions or feedback, feel free to contact at [arafath2092@gmail.com].
 
-Replace `<https://github.com/Arafath100/REACT-TASK/tree/f84d98ab5b1fffb31673d2911d862d42e63ec893/ADMIN-DASHBOARD>`, `[arafath2092@gmail.com]`, and other placeholders with relevant information.
+
 
 
 
