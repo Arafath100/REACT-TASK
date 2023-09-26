@@ -3,27 +3,36 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-// eslint-disable-next-line react/prop-types
+// Define the BooksCollection component, which accepts props like 'data', 'setData', and 'setEdit'
 const BooksCollection = ({ data, setData, setEdit }) => {
+  // Get the navigation function from 'react-router-dom'
   const navigate = useNavigate();
 
+  // Function to handle editing a book's details
   const handleEdit = (user) => {
+    // Set the 'isEditing' property to true for the selected user and navigate to the Books page
     setEdit({ ...user, isEditing: true });
     console.log(user);
     navigate("/Books");
   };
 
+  // Function to handle deleting a book
   const handleDelete = (id) => {
+    // Create a copy of the 'data' array
     const updatedData = data;
+
+    // Delete the book at the specified 'id' (index)
     delete updatedData[id];
+
+    // Filter out null values to remove the deleted book and update the 'data' array
     let filteredData = updatedData.filter((data) => data != null);
     setData(filteredData);
   };
 
   return (
     <div>
-      <table className = "table mt-3">
-        <thead className = "bg-dark">
+      <table className="table table-success table-striped">
+        <thead className="bg-dark">
           <tr>
             <th scope="col">ID</th>
             <th scope="col">Title</th>
@@ -44,12 +53,14 @@ const BooksCollection = ({ data, setData, setEdit }) => {
                 <td>{user?.isbn}</td>
                 <td>{user?.date}</td>
                 <td>
+                  {/* Button to trigger the 'handleEdit' function */}
                   <button
                     className="btn btn-primary ms-2"
                     onClick={() => handleEdit(user)}
                   >
                     Edit
                   </button>
+                  {/* Button to trigger the 'handleDelete' function */}
                   <button
                     className="btn btn-danger ms-2"
                     onClick={() => handleDelete(index)}
@@ -66,4 +77,5 @@ const BooksCollection = ({ data, setData, setEdit }) => {
   );
 };
 
+// Export the BooksCollection component
 export default BooksCollection;

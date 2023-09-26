@@ -1,24 +1,28 @@
+// Import necessary styles and dependencies
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Books from "./Components/Books";
+import Books from "./Components/BookList";
 import Header from "./Components/Header";
-import Author from "./Components/Author";
+import Author from "./Components/AuthorList";
 import Homepage from "./Pages/HomePage";
 import BooksCollection from "./Pages/BooksPage";
 import AuthorCollection from "./Pages/AuthorPage";
 import { useState } from "react";
-// import Footer from "./Components/Footer";
+
+// Define the main App component
 function App() {
+  // Define state variables for book data and edit mode
   const [data, setData] = useState([]);
   const [edit, setEdit] = useState({
     id: "",
     title: "",
     author: "",
     isbn: "",
-    data: "",
+    date: "",
     isEditing: false,
   });
 
+  // Define state variables for author data and edit mode
   const [author, setAuthor] = useState([]);
   const [authedit, setAuthEdit] = useState({
     id: "",
@@ -30,8 +34,10 @@ function App() {
 
   return (
     <Router>
+      {/* Render the Header component */}
       <Header></Header>
       <Routes>
+        {/* Define routes for different pages */}
         <Route path="/" element={<Homepage />} />
         <Route
           path="/Books"
@@ -81,9 +87,9 @@ function App() {
           }
         />
       </Routes>
-      {/* <Footer></Footer> */}
     </Router>
   );
 }
 
+// Export the App component
 export default App;
