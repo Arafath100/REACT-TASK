@@ -1,80 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--     <title>Library Management System Admin Dashboard</title> -->
-</head>
-<body>
-    <h1>Library Management System Admin Dashboard</h1>
+# Library Management System Admin Dashboard
 
-    <p>This is a web-based admin dashboard for a library management system. It allows users to manage book and author details. The dashboard is built using React and Formik for form validations.</p>
+This is a web-based admin dashboard for a library management system. It allows users to manage book and author details. The dashboard is built using React and Formik for form validations.
 
-    <h2>Features</h2>
-    <ul>
-        <li>Add, edit, and delete book records, including title, author, ISBN number, and publication date.</li>
-        <li>Add, edit, and delete author records, including author's name, birth date, and a short biography.</li>
-        <li>Form validation using Formik and Yup schema.</li>
-        <li>Responsive design for easy use and navigation.</li>
-    </ul>
+## Features
 
-    <h2>Getting Started</h2>
-    <p>Follow these instructions to get a copy of the project up and running on your local machine.</p>
+- Add, edit, and delete book records, including title, author, ISBN number, and publication date.
+- Add, edit, and delete author records, including author's name, birth date, and a short biography.
+- Form validation using Formik and Yup schema.
+- Responsive design for easy use and navigation.
 
-    <h3>Prerequisites</h3>
-    <p>Node.js and npm installed on your machine.</p>
+## Getting Started
 
-    <h3>Installation</h3>
-    <ol>
-        <li>Clone the repository to your local machine:</li>
-    </ol>
-    <code>git clone &lt;repository-url&gt;</code>
+Follow these instructions to get a copy of the project up and running on your local machine.
 
-    <ol start="2">
-        <li>Navigate to the project directory:</li>
-    </ol>
-    <code>cd ADMIN-DASHBOARD</code>
+### Prerequisites
 
-    <ol start="3">
-        <li>Install dependencies:</li>
-    </ol>
-    <code>npm install</code>
+- Node.js and npm installed on your machine.
 
-    <ol start="4">
-        <li>Start the development server:</li>
-    </ol>
-    <code>npm start</code>
+### Installation
 
-    <ol start="5">
-        <li>Open your web browser and go to <a href="http://localhost:3000">http://localhost:3000</a> to access the application.</li>
-    </ol>
+1. Clone the repository to your local machine:
 
-    <h2>Usage</h2>
-    <ol>
-        <li><strong>Add Book Record:</strong> Click on the "Add Book" link in the navigation menu to add a new book record. Fill in the required details and click "Add the Book."</li>
-        <li><strong>Edit Book Record:</strong> Click on the "Edit" button next to a book record in the "Books Collection" to edit its details.</li>
-        <li><strong>Delete Book Record:</strong> Click on the "Delete" button next to a book record in the "Books Collection" to delete it.</li>
-        <li><strong>Add Author Record:</strong> Click on the "Add Author" link in the navigation menu to add a new author record. Fill in the required details and click "Add the Details."</li>
-        <li><strong>Edit Author Record:</strong> Click on the "Edit" button next to an author record in the "Authors Collection" to edit its details.</li>
-        <li><strong>Delete Author Record:</strong> Click on the "Delete" button next to an author record in the "Authors Collection" to delete it.</li>
-    </ol>
+   ```bash
+   git clone
 
-    <h2>Contributing</h2>
-    <p>If you'd like to contribute to this project, please follow the <a href="CONTRIBUTING.md">Contributing Guidelines</a>.</p>
+2. Navigate to the project directory:
 
-    <h2>License</h2>
-    <p>This project is licensed under the <a href="LICENSE">MIT License</a>.</p>
+   ```bash
+   cd ADMIN-DASHBOARD
 
-    <h2>Acknowledgments</h2>
-    <ul>
-        <li><a href="https://reactjs.org/">React</a></li>
-        <li><a href="https://formik.org/">Formik</a></li>
-        <li><a href="https://github.com/jquense/yup">Yup</a></li>
-        <li><a href="https://reactrouter.com/">React Router</a></li>
-        <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
-    </ul>
+3. Install dependencies:
 
-    <h2>Contact</h2>
-    <p>If you have any questions or feedback, feel free to contact us at [arafath2092@gmail.com].</p>
-</body>
-</html>
+   ```bash
+   npm install
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+
+5. Open your web browser and go to http://localhost:3000 to access the application.
+
+##Usage:
+
+1. Add Book Record: Click on the "Add Book" link in the navigation menu to add a new book record. Fill in the required details and click "Add the Book."
+
+2. Edit Book Record: Click on the "Edit" button next to a book record in the "Books Collection" to edit its details.
+
+3. Delete Book Record: Click on the "Delete" button next to a book record in the "Books Collection" to delete it.
+
+4. Add Author Record: Click on the "Add Author" link in the navigation menu to add a new author record. Fill in the required details and click "Add the Details."
+
+5. Edit Author Record: Click on the "Edit" button next to an author record in the "Authors Collection" to edit its details.
+
+6. Delete Author Record: Click on the "Delete" button next to an author record in the "Authors Collection" to delete it.
+
+##Contributing:
+
+• If you'd like to contribute to this project, please follow the Contributing Guidelines.
+
+###License:
+
+• This project is licensed under the MIT License.
+
+###Acknowledgments:
+
+• https://reactjs.org/
+• https://formik.org/
+• https://github.com/jquense/yup
+• https://reactrouter.com/
+• https://getbootstrap.com/
+
+
+##Contact:
+
+If you have any questions or feedback, feel free to contact at `[arafath2092@gmail.com]`.
+
+##Github:
+
+Replace `<https://github.com/Arafath100/REACT-TASK/tree/f84d98ab5b1fffb31673d2911d862d42e63ec893/ADMIN-DASHBOARD>`, `[arafath2092@gmail.com]`, and other placeholders with relevant information.
+
+
+
+
+
+
