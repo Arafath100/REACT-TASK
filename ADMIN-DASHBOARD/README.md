@@ -32,7 +32,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 3. Install dependencies:
 
    ```bash
-   npm install
+   npm install react-router-dom formik yup react-bootstrap bootstrap
 
 4. Start the development server:
 
