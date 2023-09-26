@@ -66,9 +66,13 @@ Follow these instructions to get a copy of the project up and running on your lo
 ###Acknowledgments:
 
 • https://reactjs.org/
+
 • https://formik.org/
+
 • https://github.com/jquense/yup
+
 • https://reactrouter.com/
+
 • https://getbootstrap.com/
 
 
