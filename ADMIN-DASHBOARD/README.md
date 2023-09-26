@@ -78,7 +78,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 ##Contact:
 
-If you have any questions or feedback, feel free to contact at `[arafath2092@gmail.com]`.
+If you have any questions or feedback, feel free to contact at [arafath2092@gmail.com].
 
 ##Github:
 
