@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { PiShoppingCartSimpleFill } from "react-icons/pi";
 
+// NavBar component for navigation and cart display
 const NavBar = () => {
   const CartProducts = useSelector((state) => state.cart);
 

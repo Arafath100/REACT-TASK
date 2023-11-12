@@ -4,6 +4,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { remove } from "../store/cartSlice";
 
+// Cart component
 const Cart = () => {
   const dispatch = useDispatch();
   const products = useSelector((state) => state.cart);
@@ -59,22 +60,24 @@ const Cart = () => {
             <div className="InDe">
               <div className="price-total">
                 <Card.Text className="card-text">
-                  Subtotal of Product Price:<i class="fa-solid fa-indian-rupee-sign fa-sm"></i>{" "}
+                  Subtotal of Product Price:
+                  <i class="fa-solid fa-indian-rupee-sign fa-sm"></i>{" "}
                   {product.price * productCount[product.id] || product.price}
                 </Card.Text>
               </div>
               <div className="price-total">
-              <Button
+                <Button
                   variant="primary"
                   className="increament"
                   style={{ borderRadius: "50%" }}
                   onClick={() => {
                     if (productCount[product.id] > 0) {
                       decreaseCount(product.id);
-                    } 
-                    
+                    }
                   }}
-                >-</Button>
+                >
+                  -
+                </Button>
                 <Card.Text className="text">
                   {productCount[product.id] || 1}
                 </Card.Text>
@@ -83,7 +86,9 @@ const Cart = () => {
                   className="increament"
                   style={{ borderRadius: "50%" }}
                   onClick={() => increaseCount(product.id)}
-                >+</Button>
+                >
+                  +
+                </Button>
               </div>
             </div>
             <Button
@@ -103,7 +108,10 @@ const Cart = () => {
     <>
       <div className="text-dark">
         <span style={{ fontSize: 30 }}>My Cart</span> <br />
-        <span style={{ fontSize: 30 }}>Total Price:<i class="fa-solid fa-indian-rupee-sign fa-sm"></i> {calculateTotalPrice()}</span>
+        <span style={{ fontSize: 30 }}>
+          Total Price:<i class="fa-solid fa-indian-rupee-sign fa-sm"></i>{" "}
+          {calculateTotalPrice()}
+        </span>
         {products.length === 0 && (
           <div className="NoItems">
             <img

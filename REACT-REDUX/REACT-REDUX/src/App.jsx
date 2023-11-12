@@ -12,6 +12,7 @@ import {
   
 } from "react-router-dom";
 
+// App component with routing setup
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(

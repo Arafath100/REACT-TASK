@@ -5,10 +5,12 @@ import { useDispatch } from "react-redux";
 import { add, remove } from "../store/cartSlice";
 import { useSelector } from "react-redux/es/hooks/useSelector";
 
+// Products component to display and manage product cards
 const Products = () => {
   const CartProducts = useSelector((state) => state.cart);
   const dispatch = useDispatch();
 
+  // Check if a product is in the cart
   const isProductInCart = (productId) => {
     for (let x of CartProducts) {
       if (x.id === productId) {
@@ -18,6 +20,8 @@ const Products = () => {
     return false;
   };
   console.log(CartProducts);
+
+  // Toggle a product in and out of the cart
   const toggleCart = (product) => {
     if (isProductInCart(product.id)) {
       dispatch(remove(product.id));
@@ -26,7 +30,10 @@ const Products = () => {
     }
   };
 
+  // State for storing product data
   const [products, setProducts] = useState([]);
+
+  // Fetch products from a JSON file on component mount
   useEffect(() => {
     fetch("/mocks/products.json")
       .then((response) => response.json())
@@ -34,6 +41,7 @@ const Products = () => {
       .catch((e) => console.log(e));
   }, []);
 
+  // Map products to Card components for display
   const cards = products.map((product) => (
     <div className="card-container" key={product.id}>
       <div className="card-products">
@@ -64,9 +72,12 @@ const Products = () => {
     </div>
   ));
 
+  // Products component JSX
   return (
     <>
-      <h1 className="text-dark text-uppercase text-nowrap bg-body-secondary border fw-bolder">Shopping Cart Using React-Redux</h1>
+      <h1 className="text-dark text-uppercase text-nowrap bg-body-secondary border fw-bolder">
+        Shopping Cart Using React-Redux
+      </h1>
       <div className="card-products">{cards}</div>
     </>
   );

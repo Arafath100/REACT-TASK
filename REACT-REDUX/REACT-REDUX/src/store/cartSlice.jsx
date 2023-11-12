@@ -1,5 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
+
 const initialState = [];
+
+// Creating a cart slice with add and remove actions
 const cartSlice = createSlice({
   name: "cart",
   initialState,
