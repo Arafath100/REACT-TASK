@@ -13,11 +13,12 @@ const Homepage = () => {
         <h1>𝕃𝕀𝔹ℝ𝔸ℝ𝕐 𝕄𝔸ℕ𝔸𝔾𝔼𝕄𝔼ℕ𝕋 𝕊𝕐𝕊𝕋𝔼𝕄</h1>
         <br />
         {/* Display an image */}
-        <img
-          src="https://media.istockphoto.com/id/1363779378/photo/online-education-concept.webp?b=1&s=170667a&w=0&k=20&c=LG05Rj-fs_aGgxE6XqPF_wIkNiyxyRlU9A8ngWYqYMk="
-          style={{ height: "15cm", width: "39cm" }}
-        />
-        <br /><br />
+        <div className="img-fluid">
+        <img src="https://www.skoolbeep.com/blog/wp-content/uploads/2020/12/WHAT-IS-THE-PURPOSE-OF-A-LIBRARY-MANAGEMENT-SYSTEM-min.png" />
+        </div>
+        
+        <br />
+        <br />
       </div>
     </>
   );
