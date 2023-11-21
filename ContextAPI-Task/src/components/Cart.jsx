@@ -36,10 +36,12 @@ const Cart = () => {
   };
 
   return (
-    <div className="text-center">
-      <h1 style={{ color: "#ededed" }}>My Cart</h1>
-      <span className="container">Sub Total  : Rs{calculateTotalPrice()}</span>
-      
+    <div className="text-center ">
+      <hr />
+      <h1 style={{ color: "#ededed", fontWeight: "bolder" }}>MY CART</h1>
+      <hr />
+      <span className="container">Sub Total : Rs{calculateTotalPrice()}</span>
+
       {/* Display an image if the cart is empty */}
       {cart.length === 0 && (
         <div className="NoItems">
@@ -49,7 +51,7 @@ const Cart = () => {
           />
         </div>
       )}
-      
+
       {/* Render the products in the cart */}
       <div className="cart-product">
         {cart.map((product) => (

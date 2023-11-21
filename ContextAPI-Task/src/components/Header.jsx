@@ -20,7 +20,7 @@ const Header = () => {
               isPending ? "pending" : isActive ? "active" : ""
             }
           >
-            <h3> Home Pages</h3>
+            <h3 className="fw-bold"> SHOPPING CART</h3>
           </NavLink>
         </li>
 
@@ -33,7 +33,7 @@ const Header = () => {
             }
           >
             {/* Display "Cart" and the number of items in the cart */}
-            <h3>Cart <span>({cart.length})<i className="fa-solid fa-cart-shopping fa-fade" ></i></span></h3>
+            <h3 className="fw-bold"> <span><i className="fa-solid fa-cart-shopping " ></i><sup>({cart.length})</sup></span></h3>
           </NavLink>
         </li>
       </ul>

@@ -65,15 +65,15 @@ html {
 .productContainer {
   display: flex;
   padding: 20px;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .products {
   width: 350px;
-  padding: 10px;
-  margin: 10px;
+  padding: 15px;
+  margin: 15px;
   display: flex;
   flex-direction: column;
   background-color: #112e42;
